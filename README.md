@@ -3,6 +3,7 @@
 A complete shopping app built with Flutter for **Android and the web**, running on a live Node.js + MongoDB backend.
 
 **Try it in your browser:** https://raj02priyesh.github.io/cartzy-shop-app/
+**Android APK:** [download the latest release](https://github.com/Raj02Priyesh/cartzy-shop-app/releases/latest)
 **Demo login:** `demo@cartzy.app` / `demo1234` — or tap **Use demo** on the sign-in screen.
 
 > The API runs on a free host that sleeps when idle, so the very first load can take up to a minute.
