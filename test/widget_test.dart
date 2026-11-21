@@ -101,13 +101,13 @@ void main() {
         'totalAmount': 21999,
         'status': 'Shipped',
         'paymentStatus': 'Unpaid',
-        'shippingAddress': {'name': 'Asha', 'phone': '9876543210', 'street': '1 MG Road', 'city': 'Bengaluru', 'zipCode': '560001'},
+        'shippingAddress': {'name': 'Asha', 'phone': '9876543210', 'street': '12 Baner Road', 'city': 'Pune', 'zipCode': '411045'},
         'trackingDetails': {'shippedDate': '2026-11-20T10:00:00.000Z'},
         'orderDate': '2026-11-19T10:00:00.000Z',
       });
       expect(order.shortId, 'A3651578');
       expect(order.canCancel, isFalse);
-      expect(order.shipAddress, contains('Bengaluru'));
+      expect(order.shipAddress, contains('Pune'));
       final done = order.timeline.where((s) => s.done).map((s) => s.label).toList();
       expect(done, ['Order placed', 'Processing', 'Shipped']);
     });
@@ -115,20 +115,20 @@ void main() {
 
   test('Address maps app field names to API field names', () {
     const address = Address(
-      street: '1 MG Road',
-      city: 'Bengaluru',
-      district: 'Bengaluru Urban',
-      area: 'Bengaluru South',
-      locality: 'Koramangala',
-      state: 'Karnataka',
-      pinCode: '560034',
+      street: '12 Baner Road',
+      city: 'Pune',
+      district: 'Pune',
+      area: 'Pune City',
+      locality: 'Baner',
+      state: 'Maharashtra',
+      pinCode: '411045',
       country: 'India',
     );
     final json = address.toJson();
-    expect(json['subordinate'], 'Bengaluru South');
-    expect(json['branch'], 'Koramangala');
-    expect(json['zipCode'], '560034');
-    expect(Address.fromJson({...json, '_id': 'a1'}).locality, 'Koramangala');
+    expect(json['subordinate'], 'Pune City');
+    expect(json['branch'], 'Baner');
+    expect(json['zipCode'], '411045');
+    expect(Address.fromJson({...json, '_id': 'a1'}).locality, 'Baner');
   });
 
   test('HomeBanner extracts the category id from its link', () {

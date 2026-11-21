@@ -79,9 +79,9 @@ class _AddressFormScreenState extends State<AddressFormScreen> {
         child: ListView(
           padding: const EdgeInsets.all(16),
           children: [
-            _field(_street, 'House no., building, street', hint: 'e.g. 12B, Lake View Apartments, MG Road'),
-            _field(_locality, 'Locality / post office', hint: 'e.g. Koramangala'),
-            _field(_area, 'Area / taluk', hint: 'e.g. Bengaluru South'),
+            _field(_street, 'House no., building, street', hint: 'e.g. 12B, Green Park Society, Baner Road'),
+            _field(_locality, 'Locality / post office', hint: 'e.g. Baner'),
+            _field(_area, 'Area / taluk', hint: 'e.g. Pune City'),
             Row(
               children: [
                 Expanded(child: _field(_city, 'City')),

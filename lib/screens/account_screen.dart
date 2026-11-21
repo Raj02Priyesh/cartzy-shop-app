@@ -238,7 +238,7 @@ class _AboutTile extends StatelessWidget {
             applicationVersion: '1.0.0',
             applicationIcon: Icon(Icons.shopping_bag_rounded, color: Theme.of(context).colorScheme.primary, size: 40),
             children: const [
-              Text('A portfolio demo by Priyesh Raj. Products, prices and orders are sample data — no real payments are taken.'),
+              Text('A portfolio demo by Priyesh Raj. Products, prices and orders are sample data - no real payments are taken.'),
             ],
           ),
         ),

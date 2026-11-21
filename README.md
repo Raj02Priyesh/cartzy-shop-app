@@ -1,10 +1,10 @@
-# Cartzy — Flutter Shopping App
+# Cartzy - Flutter Shopping App
 
 A complete shopping app built with Flutter for **Android and the web**, running on a live Node.js + MongoDB backend.
 
 **Try it in your browser:** https://raj02priyesh.github.io/cartzy-shop-app/
 **Android APK:** [download the latest release](https://github.com/Raj02Priyesh/cartzy-shop-app/releases/latest)
-**Demo login:** `demo@cartzy.app` / `demo1234` — or tap **Use demo** on the sign-in screen.
+**Demo login:** `demo@cartzy.app` / `demo1234` - or tap **Use demo** on the sign-in screen.
 
 > The API runs on a free host that sleeps when idle, so the very first load can take up to a minute.
 
@@ -19,15 +19,15 @@ Backend (REST API): [cartzy-ecommerce-backend](https://github.com/Raj02Priyesh/c
 
 ## Features
 
-- **Home** — auto-scrolling banner carousel, shop-by-category, best sellers and the full catalog
-- **Browse & search** — categories with sub-categories, live search with debouncing, sort by price or discount
-- **Product details** — image gallery, MRP / price / % off, stock status, specifications, similar products
-- **Accounts** — sign up, sign in (JWT), session restored on restart, automatic sign-out when a session expires
-- **Cart** — quantities, live totals and savings, synced with the server
-- **Wishlist** — save items with one tap, move to cart
-- **Checkout** — saved addresses, add a new address with validation, cash on delivery
-- **Orders** — order history, delivery timeline (placed → processing → shipped → out for delivery → delivered), cancel pending orders
-- **Polish** — light & dark themes, loading / empty / error states with retry, responsive grid from phones to desktops, a friendly "waking up the server" message on cold starts
+- **Home** - auto-scrolling banner carousel, shop-by-category, best sellers and the full catalog
+- **Browse & search** - categories with sub-categories, live search with debouncing, sort by price or discount
+- **Product details** - image gallery, MRP / price / % off, stock status, specifications, similar products
+- **Accounts** - sign up, sign in (JWT), session restored on restart, automatic sign-out when a session expires
+- **Cart** - quantities, live totals and savings, synced with the server
+- **Wishlist** - save items with one tap, move to cart
+- **Checkout** - saved addresses, add a new address with validation, cash on delivery
+- **Orders** - order history, delivery timeline (placed → processing → shipped → out for delivery → delivered), cancel pending orders
+- **Polish** - light & dark themes, loading / empty / error states with retry, responsive grid from phones to desktops, a friendly "waking up the server" message on cold starts
 
 ## Tech
 
@@ -47,7 +47,7 @@ Backend (REST API): [cartzy-ecommerce-backend](https://github.com/Raj02Priyesh/c
 lib/
   config.dart          API base URL (overridable at build time) and demo login
   core/                API client, formatting helpers
-  models/              Product, Category, Cart, Order, Address, User — parsed defensively from JSON
+  models/              Product, Category, Cart, Order, Address, User - parsed defensively from JSON
   services/            Catalog and order endpoints
   state/               Auth, cart and wishlist providers
   screens/             One file per screen
@@ -87,7 +87,7 @@ Both run automatically on every push, and the web app is redeployed when they pa
 
 ## Credits
 
-Product photos are free-licence images from [Unsplash](https://unsplash.com/license). Brands and products are fictional sample data — no real payments are taken.
+Product photos are free-licence images from [Unsplash](https://unsplash.com/license). Brands and products are fictional sample data - no real payments are taken.
 
 ## License
 

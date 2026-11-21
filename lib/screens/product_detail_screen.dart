@@ -273,7 +273,7 @@ class _StockChip extends StatelessWidget {
     final (text, color) = !product.inStock
         ? ('Out of stock', theme.colorScheme.error)
         : product.stock <= 5
-            ? ('Only ${product.stock} left — order soon', Colors.orange.shade800)
+            ? ('Only ${product.stock} left - order soon', Colors.orange.shade800)
             : ('In stock', dealColor);
     return Row(
       children: [
